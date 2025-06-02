@@ -69,4 +69,3 @@ def predict(features: PersonalityFeatures):
         "label": prediction_int,   # int label
         "input": features.dict()
     }
-
