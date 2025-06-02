@@ -1,0 +1,6 @@
+artifact_location: file:///c:/ml_app_assignment/ml/mlruns/160842011003966785
+creation_time: 1748843375358
+experiment_id: '160842011003966785'
+last_update_time: 1748843375358
+lifecycle_stage: active
+name: personality_prediction
