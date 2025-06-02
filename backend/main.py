@@ -9,8 +9,10 @@ import os
 # ---------------------
 #mlflow_model_path = r"C:\ml_app_assignment\ml\mlruns\160842011003966785\b2bebc2678ba4865975455840df6df96\artifacts\mlflow_model"
 
+base_path = os.path.dirname(os.path.abspath(__file__))
+mlflow_model_path = os.path.join(base_path, "mlflow_model")
+
 try:
-    mlflow_model_path = "./mlflow_model"
     model = mlflow.sklearn.load_model(mlflow_model_path)
 except Exception as e:
     raise RuntimeError(f"Failed to load model from MLflow path: {e}")
